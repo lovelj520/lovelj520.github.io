@@ -9,7 +9,7 @@
  window.ado.getOpInfo().then((res) => {
  let data = res.data;
  alert("aaa");
- alert(data);
+ alert(JSON.stringify(data));
  }).catch(error => {
  alert(error);
  console.log(error);
