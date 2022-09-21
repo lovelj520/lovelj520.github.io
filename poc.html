@@ -1,10 +1,17 @@
-<script src="./ado.min.3.1.0.js?key=notice"></script>
-<script>
-window.ado.getOpInfo().then((res) => {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="./ado.min.3.1.0.js?key=notice"></script>
+</head>
+<body>
+ <script>
+ window.ado.getOpInfo().then((res) => {
  let data = res.data;
  alert("aaa");
  alert(data);
  }).catch(error => {
  console.log(error);
 })
-</script>
+ </script>
+</body>
+</html>
