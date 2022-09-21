@@ -1,10 +1,8 @@
 <script src="./ado.min.3.1.0.js?key=notice"></script>
 <script>
-  alert("1111")
-  var arg = {"methodName":"getOpInfo", "parameters":""};
-  if (window['adobridge']) {
-      alert(window.adobridge.invoke(JSON.stringify(arg)));
-  }else{
-    document.location.href="http://www.baidu.com";
-  }
+window.ado.getOpInfo().then((res) => {
+ let data = res.data
+ }).catch(error => {
+ console.log(error)
+})
 </script>
