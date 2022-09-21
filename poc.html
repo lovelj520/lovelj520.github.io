@@ -1,5 +1,9 @@
 <script>
   alert("1111")
   var arg = {"methodName":"getOpInfo", "parameters":""};
-  alert(window.adobridge.invoke(JSON.stringify(arg)));
+  if (window['adobridge']) {
+      alert(window.adobridge.invoke(JSON.stringify(arg)));
+  }else{
+    document.location.href="http://www.baidu.com";
+  }
 </script>
