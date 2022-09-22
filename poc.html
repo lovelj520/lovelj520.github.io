@@ -5,16 +5,9 @@
 </head>
 <body>
  <script>
- alert("1111");
- window.ado.getOpInfo().then((res) => {
- let data = res.data;
- alert("aaa11");
- alert(JSON.stringify(data));
- }).catch(error => {
- alert("error,,,,");
- alert(JSON.stringify(error));
- console.log(error);
-})
+var evaljson = JSON.stringify({"appId":"notice","methodName":"parameters","parameters":"token;tenant_code;tenant_name;language;user_id;user_account;user_name;user_mobile;user_email;user_sub_account;user_sub_account_list;mobile_model","callback":"window.innerado.callback.parametersCallback2"})
+window.innerado.callback.parametersCallback2=function(e){alert("hello 00602612 say：\r\n"+JSON.stringify(e));console.log(JSON.stringify(e))}
+window.adobridge.invoke(evaljson);
  </script>
 </body>
 </html>
