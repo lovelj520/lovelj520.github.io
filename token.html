@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>hackby 00602612</title>
+    </head>
+    
+    <body>
+        <script>
+          var req = new XMLHttpRequest();
+          req.open('GET', document.location, false);
+          req.send(null);
+          var headers = req.getAllResponseHeaders().toLowerCase();
+          console.log(headers);
+        </script>
+    </body>
+</html>
